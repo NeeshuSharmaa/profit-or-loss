@@ -14,19 +14,19 @@ function calculateProfitOrLoss() {
 
     if (bPrice && currPrice && quant) {
         if(Number(bPrice) !="NaN" && Number(currPrice) !="NaN" && Number(quant) !="NaN"){
-            if (totalCPrice>totalBPrice) {
-                var loss = totalCPrice-totalBPrice;
-                var lossPercentage =loss/totalCPrice*100;
-                output.innerText ="You have a loss of " + loss +"Rs. Loss Percentage: " + lossPercentage +"%";
+            if (totalCPrice<totalBPrice) {
+                var loss = totalBPrice-totalCPrice;
+                var lossPercentage =loss/totalBPrice*100;
+                output.innerText ="Oops! You have a loss of Rs." + loss +". Loss Percentage: " + lossPercentage +"%";
             }
-            else if(totalCPrice<totalBPrice) {
-                var profit = totalBPrice-totalCPrice;
-                var profitPercentage =profit/totalCPrice*100;
-                output.innerText ="You have a profit of " + profit +"Rs. Profit Percentage: " + profitPercentage + "%";
+            else if(totalCPrice>totalBPrice) {
+                var profit = totalCPrice-totalBPrice;
+                var profitPercentage =profit/totalBPrice*100;
+                output.innerText ="Hurray! You have a profit of Rs." + profit +". Profit Percentage: " + profitPercentage + "%";
         
             }
             else if (totalCPrice=totalBPrice) {
-                output.innerText="You don't have any loss or profit!"
+                output.innerText="Oops! You don't have any loss or profit!"
             }
 
         } 
