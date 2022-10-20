@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@300&family=Open+Sans&family=Roboto:ital,wght@0,300;1,400&display=swap');
+
+body{
+    padding:2rem;
+    margin:0;
+    font-family: 'Roboto', sans-serif;
+    /* background-color:#0c3a66; */
+    background-image: linear-gradient(#4ca1af, #c4e0e5);
+    height:100vh;
+    box-sizing:border-box;
+}
+
+h1{
+    padding:3rem 1rem 1rem 1rem;
+    margin:0;
+    color: rgb(247, 244, 238);
+}
+
+.main-box{
+    background-color:rgb(247, 244, 238);
+    margin: 0 2rem;
+    width:50%;
+    padding:2rem;
+    border-radius:2rem;
+}
+
+.bought-price{
+    margin:1rem;
+}
+.output-box{
+    margin-bottom:1rem;
+}
+input{
+    padding:0.5rem;
+    border-color:rgb(132, 132, 133);
+    border-width:0.1px;
+    border-radius:0.5rem;
+    width:50%;
+    font-size:1rem;
+    
+}
+
+input:focus{
+    outline: none !important;
+    border-color: #719ECE;
+    box-shadow: 0 0 10px #719ECE;
+  }
+
+#check{
+    background-color:#1662aa;
+    color:white;
+    padding:0.6rem 1rem 0.6rem 1rem;
+    border-width:0px;
+    border-radius:0.2rem;
+    margin:1rem 1rem 0.5rem 1rem;
+
+  }
+  #output-box{
+    margin:1rem 1rem 0 1rem;
+  }
