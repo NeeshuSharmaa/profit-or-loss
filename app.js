@@ -13,8 +13,10 @@ function calculateProfitOrLoss() {
     var totalBPrice = bPrice*quant;
 
     if (bPrice && currPrice && quant) {
-        if(Number(bPrice) !="NaN" && Number(currPrice) !="NaN" && Number(quant) !="NaN"){
+        if(!isNaN(Number(bPrice)) && !isNaN(Number(currPrice)) && !isNaN(Number(quant))){
+            console.log("string")
             if(Number(bPrice)>0 && Number(currPrice)>0 && Number(quant)>0){
+                console.log("yess")
                 if (totalCPrice<totalBPrice) {
                     var loss = totalBPrice-totalCPrice;
                     var lossPercentage =loss/totalBPrice*100;
@@ -38,7 +40,7 @@ function calculateProfitOrLoss() {
         } 
         
         else {
-            output.innerText =" Please input only numeric values!! →_→"
+            output.innerText ="Please input only numeric values!! →_→"
         }
 
     } 
