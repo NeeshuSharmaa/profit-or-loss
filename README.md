@@ -7,3 +7,6 @@ NOTE: If one presses **Check Now** without entering any of the 3 values, the cal
 [Link](https://profit-loss-ns.netlify.app/)
 
 ![Screenshot (2)](https://user-images.githubusercontent.com/114111237/197042589-36e694bc-2a61-445c-9af6-85acaf44f7c6.png)
+
+## Languages Used
+`HTML` `CSS` `JavaScript`
